@@ -30,6 +30,18 @@ body {
   text-align: center;
 }
 
+.abs {
+  position: absolute;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z1 {
+  z-index: 1;
+}
+
 /* ===== TOP BAR ====== */
 .top-bar {
   background-color: var(--parrish-blue);
@@ -73,8 +85,8 @@ body {
   margin-bottom: 20px;
 }
 .banner {
-  /* height: 70vh; */
-  /* box-shadow: 0 0 8px 8px white inset; */
+  /* width: 100%; */
+  overflow: hidden;
 }
 .banner > img {
   /* border: 2px solid var(--deep-ocean); */
@@ -94,6 +106,49 @@ body {
 }
 .categories > img {
   width: 8%;
+}
+
+/* ====== ANIMATIONS ===== */
+/* .slide-left p {
+  animation: slide-left 10s;
+} */
+
+@keyframes slidein-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slidein-right {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  animation: 3s slidein-right;
+}
+
+h2 {
+  animation: 3s slidein-left;
+}
+
+/* @keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%
+  }
 }
 
 /* BUTTONS */
@@ -123,7 +178,7 @@ body {
   -webkit-box-shadow: 5px 5px 30px #999999;
   box-shadow: 5px 5px 30px #999999;
   -webkit-transition: all .2s ease;
- transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 /* HEIGHTS AND WIDTHS */
@@ -200,6 +255,36 @@ li > a:hover {
   color: var(--saturated-orange);
 }
 
+/* TEXT OVERLAY */
+.img-under {
+  position: absolute;
+  /* left: 50%;
+  margin: 7em -244px;
+  animation: slide 4s 1; */
+  z-index: 1;
+}
+
+@keyframes slide {
+  from { left: -150%; }
+  to { left: 50% }
+}
+
+#text-overlay {
+  position: absolute;
+  left: 50%;
+  margin: 0em -50%;
+  animation: slide 3s 1;
+  opacity: 0.85;
+  z-index: 2;
+  height: 70vh;
+  width: 100%;
+  /* left: 30;
+  position: absolute;
+  top: 30;
+  z-index: 2; */
+
+}
+
 /* MEDIA QUERIES */
 @media only screen
   and (min-width:350px)
@@ -213,7 +298,7 @@ li > a:hover {
     }
     .banner {
       height: 44vh;
-      opacity: 0.5;
+      opacity: 0.9;
     }
     .banner > a:hover {
       cursor: grab;
@@ -230,6 +315,7 @@ li > a:hover {
       display: block;
       /* FIX THIS!!! */
       padding-left: 25%;
+      /* padding-top: 80%; */
     }
     .categories > img {
       display: none;
@@ -249,6 +335,15 @@ li > a:hover {
       border: 1px solid var(--fresh-green);
       color: var(--fresh-green);
       cursor: none;
+    }
+
+    #text-overlay {
+      height: 40vh;
+      /* use opacity .7 if object fill */
+      /* object-fit: fill; */
+      /* use opacity 0.9 or 1 for object contain */
+      object-fit: contain;
+      opacity: 0.9;
     }
 
 
