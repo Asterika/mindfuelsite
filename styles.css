@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Jaldi|Yellowtail|Glacial+Indifference|Alegreya+Sans:400,900');
+
+:root {
+  --main-orange: #ff8000;
+  --main-teal: #6eb2c3;
+  --deep-teal: #009999;
+  --mint: #98ff98;
+  --vermillion: #fc4a1a;
+  --fresh-green: #4abdac;
+  --sunshine: #f7b733;
+  --offwhite: #dfdce3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+.body {
+  background: ghostwhite;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+}
+.border-top {
+  background-color: var(--deep-teal);
+  height: 1.5vh;
+  margin-left: -1.5%;
+  margin-top: -0.5%;
+  width: 105vw;
+}
+.center {
+  text-align: center;
+}
+.container {
+  background-color: var(--fresh-green);
+  /* display: flex;
+  justify-content: center;
+  margin-top: 2%; */
+  height: 10%;
+  margin: 0 auto;
+  margin-top: -1%;
+}
+.cover {
+  object-fit: cover;
+}
+.contain {
+  object-fit: contain;
+}
+.fill {
+  object-fit: fill;
+}
+.none {
+  list-style-type: none;
+  text-decoration: none;
+}
+.row {
+  border: 2px solid hotpink;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8%;
+  padding: 0 10px;
+  width: 100%;
+}
+.box {
+  /* align-items: center; */
+  border: 2px solid orange;
+  display: flex;
+  height: 20vh;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+  width: 100%;
+}
+
+/* BORDERS  */
+.b-orange {
+  border: 2px solid var(--main-orange);
+}
+
+/* BUTTONS */
+.btn-banner {
+  /* background-color: orange; */
+  border-bottom: 2px solid orange;
+  border-top: 2px solid orange;
+  color: grey;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 25%;
+  margin-top: 36%;
+  opacity: 0.7;
+  width: 100%;
+  text-transform: uppercase;
+}
+.box .btn {
+  background-color: white;
+  border: 2px solid var(--main-orange);
+  color: var(--main-orange);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50vw;
+}
+
+.box .btn:hover {
+  background-color: var(--main-orange);
+  color: white;
+}
+
+
+/* HEIGHTS & WIDTHS */
+.h650 {
+  height: 650px;
+}
+.h-20v {
+  height: 20vh;
+}
+.h-50p {
+  height: 50%;
+}
+.h-50v {
+  height: 50vh;
+}
+.h-60v {
+  height: 60vh;
+}
+.h-65p {
+  height: 65%;
+}
+.w-65p {
+  width: 65%;
+}
+.w-80p {
+  width: 80%;
+}
+.w-80v {
+  height: 80vw;
+}
+.w-95p {
+  width: 95%;
+}
+.w-100p {
+  width: 100%;
+}
+.w-100v {
+  width: 100vw;
+}
+.w-102p {
+  width: 102%;
+}
+.w-102v {
+  width: 102vw;
+}
+
+/* IMAGES */
+.img-container {
+  position: relative;
+  text-align: center;
+}
+.img-logo {
+  height: 250px;
+  /* margin-left: 25%; */
+  /* margin-top: 6%; */
+  width: 250px;
+}
+.logo {
+  height: 200px;
+  margin: 15px;
+  width: 200px;
+  border-radius: 2%;
+}
+
+/* NAVIGATION */
+a {
+  /* color: #282828; */
+  /* color: #009999; */
+  /* color: var(--main-teal); */
+  color: ghostwhite;
+  letter-spacing: 0.15rem;
+}
+a:hover {
+  background-color: var(--offwhite);
+  color: var(--sunshine);
+  /* color: lavender; */
+}
+li {
+  color: grey;
+  display: inline;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: bold;
+  padding: 0 1.2%;
+  text-transform: uppercase;
+  height: 100%;
+  width: 50%;;
+}
+.nav-li {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+  /* letter-spacing: 0.08em; */
+  /* margin-top: -0.5%; */
+}
+
+/* PADDING */
+.pt-1 {
+  padding-top: 1%;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen
+  and (min-width:350px)
+  and (max-width:768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .box {
+      /* align-items: center; */
+      display: flex;
+      /* justify-content: center; */
+      margin-bottom: 8%;
+      position: relative;
+      width: 60vw;
+    }
+    .btn-banner {
+      align-items: center;
+      margin-right: 60%;
+      justify-content: center;
+      z-index: 1;
+    }
+      /* justify-content: center;
+    }
+    .row {
+      flex-direction: column;
+    }
+    img {
+      height: 20%;
+    }
+    .img-logo {
+      height: 150px;
+      /* justify-content: center; */
+      /* margin-top: -24%;
+      margin-left: 40%; */
+      width: 150px;
+    }
+    .info-field {
+      border: 1px solid #303030;
+      border-radius: 20px;
+      max-width: 380px;
+    }
+    ul {
+      align-items: flex-end;
+      flex-direction: column;
+    }
+
+    /* Code Credit: The following block of input code is courtesy Alex Gibson, https://www.webdesignerdepot.com/2013/03/how-to-make-your-contact-forms-mobile-friendly/ */
+    input[type=text], input[type=url], input[type=email], input[type=password], input[type=tel] {
+      -webkit-appearance: none; -moz-appearance: none;
+      display: block;
+      margin: 0;
+      width: 100%; height: 40px;
+      line-height: 40px; font-size: 17px;
+      border: 1px solid #bbb;
+    }
+    form {
+      align-items: center;
+      width: 100%;
+    }
+    textarea {
+      width: 99%;
+    }
+    h1, h3 {
+      font-size: 2.4rem;
+    }
+    .welcome-text {
+      position: absolute;
+      top: -4%;
+      left: 6%;
+    }
+    .welcome-icon {
+      height: 220px;
+      position: absolute;
+      top: 87%;
+      left: 25%;
+      width: 220px;
+    }
+
+    .welcome-icon:hover {
+      background-color: blue;
+    }
+
+    .welcome-bubble-text {
+      position: absolute;
+      top: 88%;
+      left: 31%;
+    }
+  }
