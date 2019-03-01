@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Test</title>
     <!-- STYLES -->
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
   <body>
     <!-- NAVIGATION -->
-    <div class="top-bar"></div>
+    <div class="topbar"></div>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#connect">Connect</a>
+      <a href="javascript:void(0);" class="icon" onclick="closeNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- <i onclick="closeNav(this)" class="fa fa-close"></i> -->
+    </div>
+
+
+    <!-- <div class="top-bar"></div>
       <div class="nav-container">
-        <nav class="center">
+        <div class="topnav" id="myTopnav">
           <ul class="none pt-1">
             <li class="nav-li font-effect-splintered">
-              <a href="#" class="none">Home</a>
+              <a href="#" class="none active">Home</a>
             </li>
             <li class="nav-li none font-effect-splintered">
               <a href="/pages/services" class="none">Services</a>
@@ -27,12 +43,15 @@
             <li class="nav-li none font-effect-splintered">
               <a href="/pages/connect" class="none">Connect</a>
             </li>
+            <li class="nav-li none font-effect-splintered">
+              <a href="javascript:void(0);" class="icon" onclick="closeNav()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
           </ul>
-        </nav>
       </div>
-    <!-- CONTAINER -->
-    <!-- <div class="container"> -->
-      <!-- MAIN CONTENT -->
+    </div> -->
+
       <div class="img-container">
         <!-- banner -->
         <!-- slide-in-left -->
@@ -71,5 +90,21 @@
         </div>   -->
       <!-- </div> -->
     <!-- </div> -->
+
+    <script type="text/javascript">
+      function closeNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <!-- <script type="text/javascript">
+      function closeNav(x) {
+        x.classList.toggle("fa-close");
+      }
+    </script> -->
   </body>
 </html>
