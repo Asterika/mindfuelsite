@@ -12,87 +12,36 @@
     <!-- NAVIGATION -->
     <div class="topbar"></div>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
+      <a href="#" class="active">Home</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
-      <a href="#schedule">Schedule</a>
+      <!-- <a href="#schedule">Schedule</a> -->
       <a href="#connect">Connect</a>
-      <a href="javascript:void(0);" class="icon" onclick="closeNav()">
+      <a href="javascript:void(0);" class="icon" onclick="runNav()">
         <i class="fa fa-bars"></i>
       </a>
-      <!-- <i onclick="closeNav(this)" class="fa fa-close"></i> -->
+    </div>
+    <!-- MAIN IMAGE -->
+    <div class="img-container">
+        <img src="images/mindfuel-logo-md.png" id="text-overlay" alt="MindFuel Logo"/>
+        <img src="images/studying.jpg" class="h65v" alt="Student writing"/>
+    </div>
+    <!-- ICON ROW -->
+    <div class="icon-container">
+      <img src="images/editing_icon.png" alt="Editing Icon" />
+      <img src="images/tutoring_icon.png" alt="Tutoring Icon" />
+      <img src="images/test_prep_icon.png" alt="Test Prep Icon" />
+    </div>
+    <!-- BUTTON ROW -->
+    <div class="icon-container">
+      <a href="/editing">Editing</a>
+      <a href="/tutoring">Tutoring</a>
+      <a href="/tutoring">Test Prep</a>
     </div>
 
-
-    <!-- <div class="top-bar"></div>
-      <div class="nav-container">
-        <div class="topnav" id="myTopnav">
-          <ul class="none pt-1">
-            <li class="nav-li font-effect-splintered">
-              <a href="#" class="none active">Home</a>
-            </li>
-            <li class="nav-li none font-effect-splintered">
-              <a href="/pages/services" class="none">Services</a>
-            </li>
-            <li class="nav-li none font-effect-splintered">
-              <a href="/pages/about" class="none">About</a>
-            </li>
-            <li class="nav-li none font-effect-splintered">
-              <a href="/pages/schedule" class="none">Schedule</a>
-            </li>
-            <li class="nav-li none font-effect-splintered">
-              <a href="/pages/connect" class="none">Connect</a>
-            </li>
-            <li class="nav-li none font-effect-splintered">
-              <a href="javascript:void(0);" class="icon" onclick="closeNav()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </li>
-          </ul>
-      </div>
-    </div> -->
-
-      <div class="img-container">
-        <!-- banner -->
-        <!-- slide-in-left -->
-        <!-- <div class="abs banner h70v z1"> -->
-        <!-- add img-under to banner div -->
-          <!-- <div class="banner"> -->
-          <!-- <h2 id="text-overlay">Welcome to MindFuel</h2> -->
-          <img src="images/mindfuel-logo-md.png" id="text-overlay" alt="MindFuel Logo"/>
-          <!-- <div class="blurred-edge"> -->
-          <img src="images/studying.jpg" class="h65v" alt="Student writing"/>
-          <!-- </div> -->
-      </div>
-
-      <div class="icon-container">
-        <img src="images/editing_icon.png" alt="Editing Icon" />
-        <img src="images/tutoring_icon.png" alt="Tutoring Icon" />
-        <img src="images/test_prep_icon.png" alt="Test Prep Icon" />
-      </div>
-      <div class="icon-container">
-        <a href="/editing">Editing</a>
-        <a href="/tutoring">Tutoring</a>
-        <a href="/tutoring">Test Prep</a>
-      </div>
-        <!-- categories -->
-        <!-- <div>
-          <div class="categories">
-            <img src="images/editing_icon.png" alt="Editing Icon">
-            <img src="images/tutoring_icon.png" alt="Tutoring Icon">
-            <img src="images/test_prep_icon.png" alt="Test Prep Icon">
-          </div>
-          <div class="categories">
-            <a href="/editing">Editing</a>
-            <a href="/tutoring">Tutoring</a>
-            <a href="/tutoring">Test Prep</a>
-          </div>
-        </div>   -->
-      <!-- </div> -->
-    <!-- </div> -->
-
+    <!-- JS -->
     <script type="text/javascript">
-      function closeNav() {
+      function runNav() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
           x.className += " responsive";
@@ -101,10 +50,6 @@
         }
       }
     </script>
-    <!-- <script type="text/javascript">
-      function closeNav(x) {
-        x.classList.toggle("fa-close");
-      }
-    </script> -->
+
   </body>
 </html>

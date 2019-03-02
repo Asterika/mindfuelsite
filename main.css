@@ -19,7 +19,33 @@ body {
 .center {
   text-align: center;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+    /* align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    text-align: left; */
+  }
+/* OBJECT-FIT */
+.contain {
+  object-fit: contain;
+}
+.cover {
+  object-fit: cover;
+}
+.fill {
+  object-fit: fill;
+}
+
 /* HEIGHTS AND WIDTHS */
+.h50v {
+  height: 50vh;
+}
 .h65v {
   height: 65vh;
 }
@@ -28,11 +54,12 @@ body {
 .topbar {
   background-color: var(--parrish-blue);
   height: 1vh;
-  /* margin-bottom: 1%; */
   width: 100%;
 }
 
 /* ===== NAVIGATION ====== */
+/* Citation: Please note that my original reponsive navigation code was replaced for the WS3 code in this article, as this was my first attempt at integrating hamburger navigation icon for small screen sizes: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
 /* Add styling to the main nav container */
 .topnav {
   overflow: hidden;
@@ -69,42 +96,6 @@ body {
 .topnav .icon {
   display: none;
 }
-/* .nav-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 4.5vh;
-  padding-bottom: 0.7%;
-  width: 100%;
-}
-.topnav {
-  border: 3px solid lime;
-  overflow: hidden;
-}
-.topnav .icon {
-  display: none;
-}
-ul, ul > li {
-  display: inline;
-  font-size: 1.7rem;
-  list-style-type: none;
-  padding-left: 3%;
-  padding-right: 4.5%;
-  text-align: center;
-  text-transform: uppercase;
-}
-li > a {
-  color: var(--fresh-green);
-  font-weight: bold;
-  text-decoration: none;
-}
-li > a:hover {
-  color: var(--saturated-orange);
-}
-.active {
-  background-color: white;
-  color: var(--fresh-green);
-} */
 
 /* ====== MAIN IMAGE ===== */
 .img-container {
