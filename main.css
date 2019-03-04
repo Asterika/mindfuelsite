@@ -1,7 +1,8 @@
 /* ===== FONTS ====== */
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Jaldi|Yellowtail|Glacial+Indifference|Alegreya+Sans:400,900&effect=3d-float|3d|wallpaper|splintered');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Jaldi|Yellowtail|Glacial+Indifference|Felipa|Special+Elite|Alegreya+Sans:400,900&effect=3d-float|3d|wallpaper|splintered');
 
 :root {
+  --charcoal: #484848;
   --fresh-green: #4abdac;
   --jumbotron-grey: #e9ecef;
   --offwhite: #dfdce3;
@@ -11,13 +12,20 @@
 
 /* ===== GENERAL STYLES ====== */
 body {
-  font-family: 'Alegreya Sans', sans-serif;
+  color: var(--charcoal);
+  font-family: 'Glacial Indifference', sans-serif;
   height: 100%;
   margin: 0 auto;
   width: 100%;
 }
 .center {
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+.center1 {
+  align-content: center;
+  justify-content: center;
 }
 .container {
   display: flex;
@@ -25,29 +33,89 @@ body {
   justify-content: center;
   width: 100%;
   text-align: center;
-    /* align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    text-align: left; */
-  }
-/* OBJECT-FIT */
-.contain {
-  object-fit: contain;
 }
-.cover {
-  object-fit: cover;
-}
-.fill {
-  object-fit: fill;
+h2 {
+  font-family: "Special Elite", sans-serif;
+  letter-spacing: 0.18rem;
+  font-weight:bold;
 }
 
+/* COLORS */
+  .blue {
+    background-color: var(--parrish-blue);
+  }
+  .green {
+    background-color: var(--fresh-green);
+  }
+  .grey {
+    background-color: gainsboro;
+  }
+  .orange {
+    background-color: var(--saturated-orange);
+  }
+  .font-blue {
+    color: var(--parrish-blue);
+  }
+  .font-green {
+    color: var(--fresh-green);
+  }
+  .font-grey {
+    color: darkslategrey;
+  }
+  .font-orange {
+    color: var(--saturated-orange);
+  }
+  .font-white {
+    color: white;
+  }
+
+/* DISPLAY & OBJECT FIT */
+  .inline {
+    display: inline;
+  }
+  .block {
+    display: block;
+  }
+/* OBJECT-FIT */
+  .contain {
+    object-fit: contain;
+  }
+  .cover {
+    object-fit: cover;
+  }
+  .fill {
+    object-fit: fill;
+  }
+
+/* FONTS */
+  .f14 {
+    font-size: 1.4rem;
+  }
+  .f15 {
+    font-size: 1.5rem;
+  }
+  .f16 {
+    font-size: 1.6rem;
+  }
+  .f18 {
+    font-size: 1.8rem;
+  }
+
 /* HEIGHTS AND WIDTHS */
+.h30v {
+  height: 30vh;
+}
+.h40v {
+  height: 40vh;
+}
 .h50v {
   height: 50vh;
 }
 .h65v {
   height: 65vh;
+}
+.h70v {
+  height: 70vh;
 }
 
 /* ===== TOP BAR ====== */
@@ -65,7 +133,6 @@ body {
   overflow: hidden;
   text-align: center;
 }
-
 /* Style the links inside the navigation bar */
 .topnav a {
   float: center;
@@ -79,19 +146,16 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: rgba(74,189,172,0.9);
   color: white;
 }
-
 /* Add an active class to highlight the current page */
 .active {
   /* background-color: var(--fresh-green); */
   color: var(--fresh-green);
 }
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -99,7 +163,7 @@ body {
 
 /* ====== MAIN IMAGE ===== */
 .img-container {
-  height: 65vh;
+  height: 50vh;
   overflow: hidden;
   width: 100%;
 }
@@ -122,6 +186,14 @@ body {
 }
 
 /* BUTTONS */
+.button-header {
+  background-color: ghostwhite;
+  color: var(--parrish-blue);
+  font-size: 1.3rem;
+  height: 2%;
+  text-align: center;
+  width: 6%
+}
 .icon-container > a {
   align-items: center;
   background-color: var(--fresh-green);
@@ -150,10 +222,11 @@ body {
 }
 
 /* ====== ANIMATIONS ===== */
-/* .img-under {
+.img-under {
+  height: 60vh;
   position: absolute;
   z-index: 1;
-} */
+}
 @keyframes slide {
   from { left: -150%; }
   to { left: 50% }
@@ -165,8 +238,51 @@ body {
   animation: slide 3s 1;
   opacity: 0.85;
   z-index: 2;
-  height: 65vh;
+  height: 60vh;
   width: 100%;
+}
+
+/* ===== MAIN CONTENT ====== */
+.content-container {
+  /* background-color: rgba(0,128,156,0.8); */
+  background-color: white;
+  display:flex;
+  /* flex-direction:column; */
+  align-content:center;
+  justify-content:center;
+  /* text-align: center; */
+}
+.content-direction {
+  flex-direction: column;
+}
+.content-box {
+  background-color: white;
+  /* border: 5px inset lavender; */
+  border: 5px solid var(--parrish-blue);
+  text-align: center;
+  font-size: 1.4rem;
+  height:35vh;
+  width:50vw;
+  margin: 5% 2%;
+  padding: 4%;
+}
+
+/* ===== MIDBAR ====== */
+hr {
+  border: 0.2rem solid var(--saturated-orange);
+  margin-top: -0.8%;
+  text-align: center;
+  width: 10%;
+}
+
+/* ===== TEXTBOX ====== */
+.textbox {
+  background-color: white;
+  border: 3px inset var(--saturated-orange);
+  color: var(--parrish-blue);
+  height: 32%;
+  text-align: center;
+  width: 25%;
 }
 
 /* ===== MEDIA QUERIES ====== */
@@ -176,6 +292,12 @@ body {
   and (-webkit-min-device-pixel-ratio: 2) {
     a:hover {
       cursor: pointer;
+    }
+    .content-box {
+      border: 5px solid var(--parrish-blue);
+      font-size: 1.4rem;
+      height: 40vh;
+      width: 80vw;
     }
     .img-container {
       height: 44vh;
@@ -222,8 +344,9 @@ body {
       opacity: 0.7;
     }
 }
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -232,7 +355,7 @@ body {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
