@@ -1,1 +1,1 @@
-![mindfuel_logo](https://user-images.githubusercontent.com/40532253/53773666-2a7c7600-3ea0-11e9-8dfe-128824deca24.png)
+![mindfuel_banner](https://user-images.githubusercontent.com/40532253/53837075-8ef21080-3f46-11e9-9569-bcbd3c19b8eb.png)
