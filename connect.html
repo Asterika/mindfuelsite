@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>Connect</title>
     <!-- STYLES -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -23,8 +28,12 @@
     </div>
     <!-- MAIN IMAGE -->
     <div class="img-container">
-        <img src="images/connecting.png" class="fill
-         h50v" alt="Laptop and Coffee"/>
+      <img
+        src="images/connecting.png"
+        class="fill
+         h50v"
+        alt="Laptop and Coffee"
+      />
     </div>
     <!-- MAIN CONTENT -->
     <!-- <div class="container">
@@ -32,40 +41,51 @@
       email me at mindfuelnw@gmail.com<br />
     </div> -->
     <div>
-      <p class="container">To submit an editorial project<br />
-      or to schedule a session with me,<br />
-      please fill out the form below<br />
-      and I'll be in touch soon.</p><br /><br />
+      <p class="container f13 mt2">
+        To submit an editorial project<br />
+        or to schedule a session with me,<br />
+        please fill out the form below<br />
+        and I'll be in touch soon.
+      </p>
+      <br /><br />
     </div>
-        <div class="content-container">
-          <div class="content-direction">
-            <div class="content-box" style="padding:8%;">
-              <form method="POST" action="https://formspree.io/mindfuelnw@gmail.com">
-                <input type="text" placeholder="Name"><br ><br >
-                <input type="email" placeholder="Email"><br ><br >
-                <input type="text" placeholder="Subject"><br ><br >
+    <div class="content-container mt-4">
+      <!-- <div class="content-direction"> -->
+      <div class="content-box p5">
+        <form method="POST" action="https://formspree.io/mindfuelnw@gmail.com">
+          <input type="text" placeholder="Name" /><br /><br />
+          <input type="email" placeholder="Email" /><br /><br />
+          <input type="text" placeholder="Subject" /><br /><br />
 
-                <textarea name="message" rows="8" cols="80" placeholder="Please include a project due date and a phone number if you prefer text/phone communication"></textarea><br /><br /><br /><br />
-                <div class="center">
-                <button id="redirectButton" type="submit" class="button-connect">Connect</button>
-              </div>
-          <!-- <input type="hidden" name="_next" value="/thanks" /> -->
-            </form>
+          <textarea
+            class="mb4"
+            name="message"
+            rows="8"
+            cols="80"
+            placeholder="Please include a project due date and a phone number if you prefer text/phone communication"
+          ></textarea
+          ><br /><br /><br /><br />
+          <div class="center">
+            <button id="redirectButton" type="submit" class="button-connect">
+              Connect
+            </button>
           </div>
-        </div>
+          <!-- <input type="hidden" name="_next" value="/thanks" /> -->
+        </form>
       </div>
       <!-- </div> -->
+    </div>
+    <!-- </div> -->
     <!-- JS -->
     <script type="text/javascript">
       function runNav() {
-        var x = document.getElementById("myTopnav");
+        var x = document.getElementById("myTopnav")
         if (x.className === "topnav") {
-          x.className += " responsive";
+          x.className += " responsive"
         } else {
-          x.className = "topnav";
+          x.className = "topnav"
         }
       }
     </script>
-
   </body>
 </html>

@@ -1,5 +1,5 @@
 /* ===== FONTS ====== */
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Jaldi|Yellowtail|Glacial+Indifference|Felipa|Special+Elite|Montserrat|Alegreya+Sans:400,900&effect=3d-float|3d|wallpaper|splintered');
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Jaldi|Yellowtail|Glacial+Indifference|Felipa|Special+Elite|Montserrat|Alegreya+Sans:400,900&effect=3d-float|3d|wallpaper|splintered");
 
 :root {
   --charcoal: #484848;
@@ -13,7 +13,7 @@
 /* ===== GENERAL STYLES ====== */
 body {
   color: var(--charcoal);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   margin: 0 auto;
   width: 100%;
@@ -40,88 +40,103 @@ body {
 h2 {
   font-family: "Special Elite", sans-serif;
   letter-spacing: 0.18rem;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 /* COLORS */
-  .blue {
-    background-color: var(--parrish-blue);
-  }
-  .green {
-    background-color: var(--fresh-green);
-  }
-  .grey {
-    background-color: gainsboro;
-  }
-  .orange {
-    background-color: var(--saturated-orange);
-  }
-  .font-blue {
-    color: var(--parrish-blue);
-  }
-  .font-green {
-    color: var(--fresh-green);
-  }
-  .font-grey {
-    color: darkslategrey;
-  }
-  .font-orange {
-    color: var(--saturated-orange);
-  }
-  .font-white {
-    color: white;
-  }
+.blue {
+  background-color: var(--parrish-blue);
+}
+.green {
+  background-color: var(--fresh-green);
+}
+.grey {
+  background-color: gainsboro;
+}
+.orange {
+  background-color: var(--saturated-orange);
+}
+.font-blue {
+  color: var(--parrish-blue);
+}
+.font-green {
+  color: var(--fresh-green);
+}
+.font-grey {
+  color: darkslategrey;
+}
+.font-orange {
+  color: var(--saturated-orange);
+}
+.font-white {
+  color: white;
+}
 
 /* DISPLAY & OBJECT FIT */
-  .inline {
-    display: inline;
-  }
-  .block {
-    display: block;
-  }
+.inline {
+  display: inline;
+}
+.block {
+  display: block;
+}
 /* OBJECT-FIT */
-  .contain {
-    object-fit: contain;
-  }
-  .cover {
-    object-fit: cover;
-  }
-  .fill {
-    object-fit: fill;
-  }
+.contain {
+  object-fit: contain;
+}
+.cover {
+  object-fit: cover;
+}
+.fill {
+  object-fit: fill;
+}
 
 /* FONTS */
-  .f14 {
-    font-size: 1.4rem;
-  }
-  .f15 {
-    font-size: 1.5rem;
-  }
-  .f16 {
-    font-size: 1.6rem;
-  }
-  .f18 {
-    font-size: 1.8rem;
-  }
+.f13 {
+  font-size: 1.3rem;
+}
+.f14 {
+  font-size: 1.4rem;
+}
+.f15 {
+  font-size: 1.5rem;
+}
+.f16 {
+  font-size: 1.6rem;
+}
+.f18 {
+  font-size: 1.8rem;
+}
 
 /* HEIGHTS AND WIDTHS */
-  .h30v {
-    height: 30vh;
-  }
-  .h40v {
-    height: 40vh;
-  }
-  .h50v {
-    height: 50vh;
-  }
-  .h65v {
-    height: 65vh;
-  }
-  .h70v {
-    height: 70vh;
-  }
+.h30v {
+  height: 30vh;
+}
+.h40v {
+  height: 40vh;
+}
+.h50v {
+  height: 50vh;
+}
+.h65v {
+  height: 65vh;
+}
+.h70v {
+  height: 70vh;
+}
 
 /* MARGINS & PADDING   */
+.mb4 {
+  margin-bottom: 4%;
+}
+.mt2 {
+  margin-top: 2%;
+}
+.mt-4 {
+  margin-top: -4%;
+}
+.p5 {
+  padding: 5%;
+}
 .p75 {
   padding: 7.7%;
 }
@@ -146,7 +161,7 @@ h2 {
   float: center;
   display: inline-block;
   color: var(--fresh-green);
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
@@ -156,7 +171,7 @@ h2 {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgba(74,189,172,0.9);
+  background-color: rgba(74, 189, 172, 0.9);
   color: white;
 }
 /* Add an active class to highlight the current page */
@@ -200,15 +215,16 @@ h2 {
   font-size: 1.3rem;
   height: 2%;
   text-align: center;
-  width: 6%
+  width: 6%;
 }
-.icon-container > a, .button-connect {
+.icon-container > a,
+.button-connect {
   align-items: center;
   background-color: var(--fresh-green);
   border-radius: 4px;
   color: white;
   display: flex;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   height: 55px;
@@ -217,7 +233,8 @@ h2 {
   width: 130px;
   text-transform: uppercase;
 }
-.icon-container > a:hover, .button-connect:hover {
+.icon-container > a:hover,
+.button-connect:hover {
   background-color: white;
   border: 4px solid var(--fresh-green);
   border-radius: 8px;
@@ -225,18 +242,18 @@ h2 {
   -moz-box-shadow: 5px 5px 30px #999999;
   -webkit-box-shadow: 5px 5px 30px #999999;
   box-shadow: 5px 5px 30px #999999;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* ===== MAIN CONTENT ====== */
 .content-container {
   /* background-color: rgba(0,128,156,0.8); */
   background-color: white;
-  display:flex;
+  display: flex;
   /* flex-direction:column; */
-  align-content:center;
-  justify-content:center;
+  align-content: center;
+  justify-content: center;
   /* text-align: center; */
 }
 .content-direction {
@@ -262,8 +279,12 @@ h2 {
   z-index: 1;
 }
 @keyframes slide {
-  from { left: -150%; }
-  to { left: 50% }
+  from {
+    left: -150%;
+  }
+  to {
+    left: 50%;
+  }
 }
 #text-overlay {
   position: absolute;
@@ -302,73 +323,73 @@ input {
 }
 textarea {
   border: 2px solid var(--fresh-green);
-  font-size: 1.0rem;
+  font-size: 1rem;
+  /* margin-bottom: 1%; */
   width: 50vw;
 }
 
 /* ===== MEDIA QUERIES ====== */
-@media only screen
-  and (min-width:350px)
-  and (max-width:850px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    a:hover {
-      cursor: pointer;
-    }
-    .content-box {
-      border: 5px solid var(--parrish-blue);
-      font-size: 1.4rem;
-      height: 40vh;
-      width: 80vw;
-    }
-    .img-container {
-      height: 44vh;
-      opacity: 0.9;
-    }
-    .img-container > a:hover {
-      cursor: grab;
-    }
-    .img-container > img {
-      height: 40vh;
-      opacity: 0.35;
-    }
-    .icon-container {
-      /* align-items: center; */
-      /* align-self: center; */
-      /* align-content: center;
+@media only screen and (min-width: 350px) and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2) {
+  a:hover {
+    cursor: pointer;
+  }
+  .content-box {
+    border: 5px solid var(--parrish-blue);
+    font-size: 1.3rem;
+    height: 40vh;
+    width: 80vw;
+  }
+  .img-container {
+    height: 44vh;
+    opacity: 0.9;
+  }
+  .img-container > a:hover {
+    cursor: grab;
+  }
+  .img-container > img {
+    height: 40vh;
+    opacity: 0.35;
+  }
+  .icon-container {
+    /* align-items: center; */
+    /* align-self: center; */
+    /* align-content: center;
       justify-content: center; */
-      display: block;
-      /* FIX THIS!!! */
-      padding-left: 25%;
-      /* padding-top: 80%; */
-    }
-    .icon-container > img {
-      display: none;
-    }
-    .icon-container > a {
-      cursor: grab;
-      height: 10vh;
-      margin-bottom: 4%;
-      width: 50vw;
-    }
-    .icon-container > a:hover {
-      background-color: white;
-      border: 1.5px solid var(--fresh-green);
-      color: var(--fresh-green);
-      cursor: none;
-    }
-    #text-overlay {
-      height: 40vh;
-      /* use opacity .7 if object fill */
-      object-fit: fill;
-      /* use opacity 0.9 or 1 for object contain */
-      /* object-fit: contain; */
-      opacity: 0.7;
-    }
+    display: block;
+    /* FIX THIS!!! */
+    padding-left: 25%;
+    /* padding-top: 80%; */
+  }
+  .icon-container > img {
+    display: none;
+  }
+  .icon-container > a {
+    cursor: grab;
+    height: 10vh;
+    margin-bottom: 4%;
+    width: 50vw;
+  }
+  .icon-container > a:hover {
+    background-color: white;
+    border: 1.5px solid var(--fresh-green);
+    color: var(--fresh-green);
+    cursor: none;
+  }
+  #text-overlay {
+    height: 40vh;
+    /* use opacity .7 if object fill */
+    object-fit: fill;
+    /* use opacity 0.9 or 1 for object contain */
+    /* object-fit: contain; */
+    opacity: 0.7;
+  }
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 850px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -377,7 +398,9 @@ textarea {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 850px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
