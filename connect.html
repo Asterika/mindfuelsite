@@ -13,7 +13,8 @@
     <div class="topbar"></div>
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
-      <a href="#services">Services</a>
+      <a href="#editing" class="editing">Editing</a>
+      <a href="#tutoring" class="tutoring">Tutoring</a>
       <a href="#about">About</a>
       <a href="#">Connect</a>
       <a href="javascript:void(0);" class="icon" onclick="runNav()">
@@ -22,36 +23,34 @@
     </div>
     <!-- MAIN IMAGE -->
     <div class="img-container">
-        <!-- <img src="images/mindfuel-logo-md.png" id="text-overlay" alt="MindFuel Logo"/> -->
-        <img src="images/connect.png" class="fill
+        <img src="images/connecting.png" class="fill
          h50v" alt="Laptop and Coffee"/>
     </div>
     <!-- MAIN CONTENT -->
-    <div class="container">
+    <!-- <div class="container">
       To schedule an editing project or tutoring session with me,<br />
-      email me at mindfuel@gmail.com<br />
-    </div>
+      email me at mindfuelnw@gmail.com<br />
+    </div> -->
+    <p class="container">To submit an editorial project<br />
+    or to schedule a session with me,<br />
+    please fill out the form below<br />
+    and I'll be in touch soon.</p><br />
+        <div class="content-container">
+          <div="content-direction">
+            <div class="content-box" style="padding:8%;">
+              <form method="POST" action="https://formspree.io/mindfuelnw@gmail.com">
+                <input type="text" placeholder="Name"><br ><br >
+                <input type="email" placeholder="Email"><br ><br >
+                <input type="text" placeholder="Subject"><br ><br >
 
-    <h1 class="container">Let's Connect&#160;<a href="https://www.linkedin.com/in/krystal-m-williams/" alt="LinkedIn Icon Hyperlink to Krystal Williams' LinkedIn" target="_blank"><img src="images/linkedin_logo.png" class="logo-linkedin"></a></h1>
-    <p class="container">Krystal Williams<br >
-      Greater Seattle Area, Washington</p>
-    <p class="container">To schedule an editing or tutoring session with me,<br />
-    fill out the form below and I'll be in touch </p>
-      <div class="container">
-        <form method="POST" action="https://formspree.io/mindfuelnw@gmail.com">
-          <legend>Name</legend>
-            <input type="text"><br ><br >
-          <legend>Email</legend>
-            <input type="email"><br ><br >
-          <legend>Subject</legend>
-            <input type="text"><br ><br >
-          <legend>Message</legend>
-
-          <textarea name="message" rows="8" cols="80"></textarea><br ><br >
-          <button id="redirectButton" type="submit" class="button-connect">Connect</button>
+                <textarea name="message" rows="8" cols="80" placeholder="Please include a project due date and a phone number if you prefer text/phone communication"></textarea><br /><br /><br /><br />
+                <div class="center">
+                <button id="redirectButton" type="submit" class="button-connect">Connect</button>
+            </div>
           <!-- <input type="hidden" name="_next" value="/thanks" /> -->
-        </form>
-      </div>
+            </form>
+        </div>
+      <!-- </div> -->
     <!-- JS -->
     <script type="text/javascript">
       function runNav() {
