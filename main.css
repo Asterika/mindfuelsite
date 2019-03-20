@@ -378,7 +378,7 @@ textarea {
   #text-overlay {
     height: 40vh;
     /* use opacity .7 if object fill */
-    object-fit: fill;
+    object-fit: contain;
     /* use opacity 0.9 or 1 for object contain */
     /* object-fit: contain; */
     opacity: 0.7;
