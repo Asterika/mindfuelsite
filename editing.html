@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>Editing</title>
     <!-- STYLES -->
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- NAVIGATION -->
     <div class="topbar"></div>
     <div class="topnav" id="myTopnav">
-      <a href="/mindfuelsite/" class="active">Home</a>
+      <a href="/" class="active">Home</a>
       <a href="/">Editing</a>
-      <a href="/mindfuelsite/tutoring">Tutoring</a>
-      <a href="/mindfuelsite/about">About</a>
-      <a href="/mindfuelsite/connect">Connect</a>
+      <a href="/tutoring">Tutoring</a>
+      <a href="/about">About</a>
+      <a href="/connect">Connect</a>
       <a href="javascript:void(0);" class="icon" onclick="runNav()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <!-- MAIN IMAGE -->
     <div class="img-container">
-        <img src="images/editors_pen.png" class="h50v" alt="Editor's Fountain Pen"/>
+      <img
+        src="images/editors_pen.png"
+        class="h50v"
+        alt="Editor's Fountain Pen"
+      />
     </div>
 
     <div class="content-container">
-    <div="content-direction">
+      <div="content-direction">
       <div class="content-box">
         <h2 class="font-green">Services</h2>
-        <p>I'm happy to offer you on-call edits, accepting papers every day<br /> from 10 a.m. to 10 p.m. PST.</p>
+        <p>
+          I'm happy to offer you on-call edits, accepting papers every day<br />
+          from 10 a.m. to 10 p.m. PST.
+        </p>
         <p>Video meets are available</p>
         <p>In-person meets are available local to 98258</p>
       </div>
@@ -45,25 +57,28 @@
 
       <div class="content-box">
         <h2 class="font-green">Details</h2>
-        <p>Response Time to Initial Inquiry:<br />
-        3 hours</p>
-        <p>Pricing:<br /><br />
+        <p>
+          Response Time to Initial Inquiry:<br />
+          3 hours
+        </p>
+        <p>
+          Pricing:<br /><br />
           $30/half-hour<br /><br />
-          $60/hour</p>
+          $60/hour
+        </p>
       </div>
     </div>
 
     <!-- JS -->
     <script type="text/javascript">
       function runNav() {
-        var x = document.getElementById("myTopnav");
+        var x = document.getElementById("myTopnav")
         if (x.className === "topnav") {
-          x.className += " responsive";
+          x.className += " responsive"
         } else {
-          x.className = "topnav";
+          x.className = "topnav"
         }
       }
     </script>
-
   </body>
 </html>
