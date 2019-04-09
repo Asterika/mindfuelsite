@@ -335,7 +335,7 @@ textarea {
   }
   .content-box {
     border: 5px solid var(--parrish-blue);
-    font-size: 1.3rem;
+    font-size: 1rem;
     height: 40vh;
     width: 80vw;
   }
